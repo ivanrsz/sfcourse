@@ -24,12 +24,14 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/customer/{name?}", name="customer")
+     * @Route("/custom/{name?}", name="custom")
      */
     public function custom(Request $request)
     {
         //dump($request->get("name"));
         $name = $request->get("name");
+
+
         return $this->render('home/custom.html.twig', [
             'name' => $name
         ]);

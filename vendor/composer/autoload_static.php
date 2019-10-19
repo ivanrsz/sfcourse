@@ -15,6 +15,11 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
     );
 
     public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'Zend\\EventManager\\' => 18,
+            'Zend\\Code\\' => 10,
+        ),
         'T' => 
         array (
             'Twig\\Extra\\TwigExtraBundle\\' => 27,
@@ -34,7 +39,9 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Stopwatch\\' => 28,
             'Symfony\\Component\\Routing\\' => 26,
+            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Mime\\' => 23,
             'Symfony\\Component\\HttpKernel\\' => 29,
             'Symfony\\Component\\HttpFoundation\\' => 33,
@@ -47,10 +54,12 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\Cache\\' => 24,
+            'Symfony\\Bundle\\WebServerBundle\\' => 31,
             'Symfony\\Bundle\\TwigBundle\\' => 26,
             'Symfony\\Bundle\\MakerBundle\\' => 27,
             'Symfony\\Bundle\\FrameworkBundle\\' => 31,
             'Symfony\\Bridge\\Twig\\' => 20,
+            'Symfony\\Bridge\\Doctrine\\' => 24,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
         ),
         'P' => 
@@ -59,12 +68,23 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
+            'PackageVersions\\' => 16,
         ),
         'D' => 
         array (
+            'Doctrine\\ORM\\' => 13,
+            'Doctrine\\Migrations\\' => 20,
+            'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
+            'Doctrine\\Common\\Collections\\' => 28,
+            'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
+            'Doctrine\\Bundle\\MigrationsBundle\\' => 33,
+            'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
+            'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
         'A' => 
         array (
@@ -74,6 +94,14 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
     );
 
     public static $prefixDirsPsr4 = array (
+        'Zend\\EventManager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-eventmanager/src',
+        ),
+        'Zend\\Code\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
+        ),
         'Twig\\Extra\\TwigExtraBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/extra-bundle/src',
@@ -130,9 +158,17 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Symfony\\Component\\Stopwatch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/stopwatch',
+        ),
         'Symfony\\Component\\Routing\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/routing',
+        ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
         ),
         'Symfony\\Component\\Mime\\' => 
         array (
@@ -182,6 +218,10 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
         array (
             0 => __DIR__ . '/..' . '/symfony/cache',
         ),
+        'Symfony\\Bundle\\WebServerBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/web-server-bundle',
+        ),
         'Symfony\\Bundle\\TwigBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/twig-bundle',
@@ -197,6 +237,10 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
         'Symfony\\Bridge\\Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/twig-bridge',
+        ),
+        'Symfony\\Bridge\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/doctrine-bridge',
         ),
         'Sensio\\Bundle\\FrameworkExtraBundle\\' => 
         array (
@@ -218,6 +262,26 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
+        ),
+        'Doctrine\\ORM\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/orm/lib/Doctrine/ORM',
+        ),
+        'Doctrine\\Migrations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/migrations/lib/Doctrine/Migrations',
+        ),
+        'Doctrine\\Instantiator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\DBAL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/dbal/lib/Doctrine/DBAL',
+        ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
@@ -226,9 +290,36 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
+        'Doctrine\\Common\\Collections\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
+            3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
+        ),
+        'Doctrine\\Bundle\\MigrationsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-migrations-bundle',
+        ),
+        'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-cache-bundle',
+        ),
+        'Doctrine\\Bundle\\DoctrineBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
         ),
         'App\\Tests\\' => 
         array (
@@ -248,10 +339,18 @@ class ComposerStaticInit60864ffbbe6427593e858b93bbe1bbaa
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
+        'P' => 
+        array (
+            'ProxyManager\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/ocramius/proxy-manager/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'SqlFormatter' => __DIR__ . '/..' . '/jdorn/sql-formatter/lib/SqlFormatter.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
