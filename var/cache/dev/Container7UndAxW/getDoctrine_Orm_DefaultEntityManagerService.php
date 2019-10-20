@@ -45,8 +45,10 @@ $a->setNamingStrategy(new \Doctrine\ORM\Mapping\UnderscoreNamingStrategy());
 $a->setQuoteStrategy(new \Doctrine\ORM\Mapping\DefaultQuoteStrategy());
 $a->setEntityListenerResolver(new \Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver($this));
 $a->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory(new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($this->getService, [
+    'App\\Repository\\LugarRepository' => ['privates', 'App\\Repository\\LugarRepository', 'getLugarRepositoryService.php', true],
     'App\\Repository\\PlaceRepository' => ['privates', 'App\\Repository\\PlaceRepository', 'getPlaceRepositoryService.php', true],
 ], [
+    'App\\Repository\\LugarRepository' => '?',
     'App\\Repository\\PlaceRepository' => '?',
 ])));
 

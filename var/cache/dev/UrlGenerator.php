@@ -4,6 +4,8 @@
 
 return [
     '_twig_error_test' => [['code', '_format'], ['_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
+    'lugar.index' => [[], ['_controller' => 'App\\Controller\\LugarController::index'], [], [['text', '/lugar/']], [], []],
+    'lugar.crear' => [[], ['_controller' => 'App\\Controller\\LugarController::create'], [], [['text', '/lugar/crear']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\MainController::index'], [], [['text', '/']], [], []],
     'custom' => [['name'], ['name' => null, '_controller' => 'App\\Controller\\MainController::custom'], [], [['variable', '/', '[^/]++', 'name', true], ['text', '/custom']], [], []],
 ];

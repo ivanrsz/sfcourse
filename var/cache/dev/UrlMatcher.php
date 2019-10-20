@@ -8,6 +8,8 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/lugar' => [[['_route' => 'lugar.index', '_controller' => 'App\\Controller\\LugarController::index'], null, null, null, true, false, null]],
+        '/lugar/crear' => [[['_route' => 'lugar.crear', '_controller' => 'App\\Controller\\LugarController::create'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\MainController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
